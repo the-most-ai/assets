@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>AvangardAI · Pitch — Title</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  html,body{margin:0;background:#ddd;}
+  .stage{position:relative;width:1920px;height:1080px;transform-origin:top left;}
+  .slide{width:1920px;height:1080px;background:#EFEFEF;color:#000;position:relative;overflow:hidden;}
+  .header{position:absolute;top:0;left:0;right:0;padding:40px;display:flex;align-items:center;}
+  .header .mark{width:28px;height:28px;background:#000;display:inline-block;}
+  .header .brand{font-family:var(--font-sans);font-size:22px;margin-left:14px;letter-spacing:-.01em;}
+  .body{position:absolute;left:80px;top:260px;width:1300px;}
+  .eyebrow{font-family:var(--font-mono);font-size:16px;color:#3737FF;letter-spacing:.01em;margin-bottom:24px;}
+  h1.title{font-size:96px;line-height:1.05;letter-spacing:-.03em;font-weight:400;margin:0;color:#000;}
+  .sub{font-size:24px;color:rgba(0,0,0,.6);margin-top:32px;max-width:900px;line-height:1.35;}
+  .cta{position:absolute;left:80px;bottom:160px;display:flex;gap:16px;align-items:center;}
+  .btn{padding:18px 32px;border-radius:1000px;font-family:var(--font-sans);font-size:18px;letter-spacing:-.01em;background:#3737FF;color:#fff;border:0;cursor:pointer;}
+  .btn.ghost{background:transparent;color:#000;border:1px solid rgba(0,0,0,.25);}
+  .chaos{position:absolute;right:-180px;top:-120px;width:1100px;height:1100px;background:url('../../assets/chaos-cube-primary.png') center/cover;opacity:.95;}
+  .footer{position:absolute;left:0;right:0;bottom:0;padding:40px;display:flex;justify-content:space-between;align-items:center;font-family:var(--font-mono);font-size:16px;color:#000;}
+  .footer .dot{width:5px;height:5px;border-radius:50%;background:#000;display:inline-block;margin:0 10px;vertical-align:middle;}
+  .footer .brand-r{font-family:var(--font-sans);font-size:16px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+  .footer .brand-r .mk{width:16px;height:16px;background:#000;}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="chaos"></div>
+    <div class="header">
+      <span class="mark"></span>
+      <span class="brand">AvangardAI</span>
+    </div>
+    <div class="body">
+      <div class="eyebrow">PITCH · 2025</div>
+      <h1 class="title">ИИ‑платформа<br>увеличения продаж</h1>
+      <p class="sub">Увеличиваем конверсию в сделку с помощью ИИ‑продуктов для отделов продаж и контакт‑центров.</p>
+    </div>
+    <div class="cta">
+      <button class="btn">Записаться на демо</button>
+      <button class="btn ghost">Посмотреть кейсы</button>
+    </div>
+    <div class="footer">
+      <div>№1 ИИ‑вендор в России<span class="dot"></span>2025</div>
+      <div class="brand-r"><span class="mk"></span>AvangardAI</div>
+    </div>
+  </div>
+</div>
+<script>
+  const s=document.querySelector('.stage');
+  function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);s.style.transform=`scale(${k})`;document.body.style.height=(1080*k)+'px';document.body.style.width=(1920*k)+'px';}
+  fit();addEventListener('resize',fit);
+</script>
+</body></html>

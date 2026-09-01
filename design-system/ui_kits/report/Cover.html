@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><title>Report cover</title><link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  html,body{margin:0;background:#ddd;}
+  .stage{position:relative;width:595px;height:842px;margin:auto;transform-origin:top left;}
+  .page{width:595px;height:842px;background:#E2E7FF;color:#000;position:relative;overflow:hidden;padding:40px;box-sizing:border-box;}
+  .chaos{position:absolute;left:0;right:0;bottom:0;height:46%;background:url('../../assets/chaos-cube-primary.png') center/cover;}
+  .wm{display:flex;align-items:center;gap:10px;position:relative;z-index:2;}
+  .wm .mk{width:24px;height:24px;background:#000;}
+  .wm span{font-size:14px;}
+  h1{position:absolute;left:40px;right:40px;top:42%;font-size:38px;font-weight:400;line-height:1.15;letter-spacing:-.02em;z-index:2;margin:0;color:#000;}
+  .eye{position:absolute;left:40px;top:48%;font-family:var(--font-mono);font-size:12px;color:#3737FF;z-index:2;margin-top:96px;}
+</style></head>
+<body>
+<div class="stage"><div class="page">
+  <div class="chaos"></div>
+  <div class="wm"><span class="mk"></span><span>AvangardAI</span></div>
+  <h1>Искусственный<br>интеллект во втором<br>квартале 2025 года</h1>
+  <div class="eye">АНАЛИТИЧЕСКИЙ ОТЧЁТ · Q2 2025</div>
+</div></div>
+<script>const s=document.querySelector('.stage');function fit(){const k=Math.min(innerWidth/595,innerHeight/842);s.style.transform=`scale(${k})`;document.body.style.height=(842*k)+'px';document.body.style.width=(595*k)+'px';}fit();addEventListener('resize',fit);</script>
+</body></html>

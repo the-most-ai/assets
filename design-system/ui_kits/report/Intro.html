@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Report intro</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  html,body{margin:0;background:#222;}
+  .stage{position:relative;width:595px;height:842px;transform-origin:top left;margin:auto;}
+  .page{width:595px;height:842px;background:var(--lavender-ice);position:relative;padding:28px;box-sizing:border-box;color:var(--ink);}
+  .eye{font-family:var(--font-mono);font-weight:500;font-size:12px;color:var(--accent);margin-bottom:20px;letter-spacing:-.01em;}
+  h1{font-size:24px;line-height:1.15;letter-spacing:-.01em;color:var(--accent);margin:0 0 20px;font-weight:400;}
+  p{font-size:12px;line-height:1.4;letter-spacing:-.01em;margin:0 0 12px;}
+  .rule{height:1px;background:rgba(6,0,18,.11);margin:24px 0;}
+  .h2{font-size:18px;letter-spacing:-.01em;margin:0 0 20px;font-weight:400;}
+  .card{background:#19191D;color:#fff;border-radius:12px;padding:20px;margin-bottom:8px;display:flex;gap:16px;}
+  .card .n{font-family:var(--font-mono);font-size:18px;color:var(--accent);line-height:1.15;min-width:22px;}
+  .card .b b{font-size:12px;font-weight:700;display:block;margin-bottom:8px;}
+  .card .b .hr{height:1px;background:rgba(255,255,255,.12);margin:0 0 10px;}
+  .card .b p{color:#fff;font-size:12px;}
+  .footer{position:absolute;left:28px;right:28px;bottom:28px;display:flex;justify-content:space-between;align-items:center;font-family:"Inter",sans-serif;font-size:8px;}
+  .footer .wm{display:flex;gap:6px;align-items:center;}
+  .footer .wm .mk{width:28px;height:10px;background:var(--ink);}
+  .footer .tag{opacity:.45;}
+</style></head>
+<body>
+<div class="stage"><div class="page">
+  <div class="eye">ВВЕДЕНИЕ</div>
+  <h1>ИИ‑фикация бизнеса: от простых решений к стратегическим преимуществам</h1>
+  <p>В 2025 году искусственный интеллект перестал быть привилегией технологических гигантов. Мы подготовили этот отчет, чтобы показать на реальных примерах: <b>GenAI технологии достигли уровня зрелости, при котором они легко интегрируются в бизнес-процессы обычных компаний,</b> стоят разумных денег и дают быстрые, измеримые результаты.</p>
+  <p><b>Наша цель —</b> развеять миф о том, что ИИ — это сложно, дорого и только для избранных. Через кейсы внедрения мы покажем, как средние и малые предприятия получают конкретную пользу от GenAI решений уже через несколько недель после запуска, а затем развивают эти первые успехи в комплексные стратегии ИИ‑фикации.</p>
+  <div class="rule"></div>
+  <div class="h2">Почему сейчас — идеальное время для внедрения GenAI?</div>
+  <div class="card"><span class="n">01</span><div class="b"><b>Технологическая готовность достигнута</b><div class="hr"></div><p>Современные GenAI решения работают из коробки, не требуют глубокой технической экспертизы и интегрируются с существующими системами через простые API.</p></div></div>
+  <div class="card"><span class="n">02</span><div class="b"><b>Экономическая эффективность доказана</b><div class="hr"></div><p>Стоимость использования GenAI упала в разы за последние два года, а ROI становится очевидным уже в первые месяцы использования.</p></div></div>
+  <div class="card"><span class="n">03</span><div class="b"><b>Конкурентное давление растет</b><div class="hr"></div><p>Компании, которые не начнут использовать ИИ в ближайшие 12–18 месяцев, рискуют безнадежно отстать от более проактивных конкурентов.</p></div></div>
+  <div class="footer">
+    <div class="wm"><span class="mk"></span><span class="tag">— ИИ‑платформа увеличения продаж</span></div>
+    <div>03</div>
+  </div>
+</div></div>
+<script>
+  const s=document.querySelector('.stage');
+  function fit(){const k=Math.min(innerWidth/595,innerHeight/842);s.style.transform=`scale(${k})`;document.body.style.height=(842*k)+'px';document.body.style.width=(595*k)+'px';}
+  fit();addEventListener('resize',fit);
+</script>
+</body></html>
