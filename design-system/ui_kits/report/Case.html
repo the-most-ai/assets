@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><title>Case</title><link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  html,body{margin:0;background:#222;}
+  .stage{position:relative;width:595px;height:842px;margin:auto;transform-origin:top left;}
+  .page{width:595px;height:842px;background:var(--lavender-ice);color:var(--ink);padding:28px;box-sizing:border-box;position:relative;}
+  .head{display:flex;gap:8px;align-items:center;margin-bottom:12px;}
+  .head .n{font-family:var(--font-mono);font-size:18px;color:var(--accent);}
+  .head .co{font-size:18px;letter-spacing:-.01em;}
+  .pill{background:#fff;border-radius:1000px;padding:10px 12px;font-weight:700;font-size:12px;letter-spacing:-.01em;display:inline-block;margin-bottom:20px;}
+  .blk{border-radius:12px;padding:16px;background:#fff;margin-bottom:8px;}
+  .blk .eye{font-family:var(--font-mono);font-weight:500;font-size:10px;color:var(--accent);text-transform:uppercase;margin-bottom:8px;letter-spacing:.02em;}
+  .blk p{font-size:11px;line-height:1.45;margin:0;}
+  .metric{display:flex;gap:12px;margin-top:12px;}
+  .metric .m{flex:1;background:#19191D;color:#fff;border-radius:12px;padding:16px;}
+  .metric .v{font-family:var(--font-mono);font-weight:300;font-size:28px;color:var(--accent);line-height:1;}
+  .metric .l{font-size:10px;margin-top:6px;color:rgba(255,255,255,.7);}
+  .footer{position:absolute;left:28px;right:28px;bottom:28px;display:flex;justify-content:space-between;font-family:"Inter",sans-serif;font-size:8px;}
+  .footer .wm{display:flex;gap:6px;align-items:center;}
+  .footer .wm .mk{width:28px;height:10px;background:var(--ink);}
+  .footer .tag{opacity:.45;}
+</style></head>
+<body>
+<div class="stage"><div class="page">
+  <div class="head"><span class="n">01</span><span class="co">Лапочка</span></div>
+  <div class="pill">ИИ‑система «Наполеон отзывы» для анализа потребительских предпочтений</div>
+  <div class="blk"><div class="eye">ПРОБЛЕМА</div><p>Невозможно оперативно отслеживать качество доставки и предпочтения по продуктам в отзывах на маркетплейсах. Ручной анализ отнимал недели и пропускал тренды.</p></div>
+  <div class="blk"><div class="eye">РЕШЕНИЕ</div><p>ООО «Наполеон АЙТИ» разработало систему «Наполеон отзывы» на основе ML и LLM. Система анализировала отзывы с маркетплейсов в реальном времени, формируя аналитические отчеты.</p></div>
+  <div class="blk"><div class="eye">РЕЗУЛЬТАТ</div><p>Запущен в производство напиток с новым вкусом, соответствующим запросам потребителей. Время конкурентного анализа сократилось до 20 минут. Эффективность рекламных кампаний выросла.</p>
+    <div class="metric">
+      <div class="m"><div class="v">50K+</div><div class="l">отзывов за 20 мин</div></div>
+      <div class="m"><div class="v">−70%</div><div class="l">время анализа</div></div>
+      <div class="m"><div class="v">+2×</div><div class="l">ROI кампаний</div></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="wm"><span class="mk"></span><span class="tag">— ИИ‑платформа увеличения продаж</span></div>
+    <div>08</div>
+  </div>
+</div></div>
+<script>const s=document.querySelector('.stage');function fit(){const k=Math.min(innerWidth/595,innerHeight/842);s.style.transform=`scale(${k})`;document.body.style.height=(842*k)+'px';document.body.style.width=(595*k)+'px';}fit();addEventListener('resize',fit);</script>
+</body></html>
